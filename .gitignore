@@ -33,6 +33,8 @@ octave-core
 *.tar
 *.gz
 .DS_Store
+.cproject
+.project
 
 # gentab programs
 src/fec/gentab/*_gentab
