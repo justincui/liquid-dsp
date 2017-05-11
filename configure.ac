@@ -122,7 +122,7 @@ AC_CHECK_LIB([fec], [create_viterbi27], [],
              [])
 
 CFLAGS="$CFLAGS -I../kissfft"
-CPPFLAGS="$CXXFLAGS -I../kissfft"
+CPPFLAGS="$CPPFLAGS -I../kissfft"
 AC_CHECK_HEADERS(kiss_fft.h)
 
 LDFLAGS="$LDFLAGS -L../kissfft/.libs -Wl,-rpath=../kissfft/.libs"
