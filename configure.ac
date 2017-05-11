@@ -125,7 +125,7 @@ CFLAGS="$CFLAGS -I../kissfft"
 CPPFLAGS="$CXXFLAGS -I../kissfft"
 AC_CHECK_HEADERS(kiss_fft.h)
 
-LDFLAGS="$LDFLAGS -L../kissfft/.libs"
+LDFLAGS="$LDFLAGS -L../kissfft/.libs -Wl,-rpath=../kissfft/.libs"
 AC_CHECK_LIB([kissfft], [kiss_fft_alloc], [], [], [])
 
 # Checks for typedefs, structures, and compiler characteristics.
